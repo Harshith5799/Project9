@@ -1,0 +1,139 @@
+/* Import stylish Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+/* Beautiful Gradient Background */
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+/* Main App Container */
+.app{
+  width:420px;
+  padding:30px;
+  border-radius:20px;
+  backdrop-filter: blur(18px);
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  text-align:center;
+  color:#fff;
+}
+
+/* Header */
+.header h1{
+  font-weight:600;
+  margin-bottom:20px;
+  letter-spacing:1px;
+}
+
+/* Search Box */
+.search{
+  display:flex;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.search input{
+  flex:1;
+  padding:12px;
+  border:none;
+  outline:none;
+  border-radius:10px;
+  font-size:16px;
+}
+
+.search button{
+  padding:12px 16px;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:500;
+  background:#ffffff;
+  color:#333;
+  transition:0.3s;
+}
+
+/* Button Hover Effect */
+.search button:hover{
+  background:#222;
+  color:#fff;
+  transform:scale(1.05);
+}
+
+/* Weather Card */
+.weather-card{
+  margin-top:20px;
+  padding:20px;
+  border-radius:15px;
+  background: rgba(255,255,255,0.2);
+  box-shadow:0 4px 20px rgba(0,0,0,0.2);
+  animation:fadeIn 0.6s ease-in-out;
+}
+
+.weather-card h2{
+  margin-bottom:10px;
+}
+
+.weather-card p{
+  margin:5px 0;
+  font-size:15px;
+}
+
+/* Error Message */
+.error{
+  color:#ffdddd;
+  margin-top:10px;
+  font-weight:500;
+}
+
+/* Footer */
+.footer{
+  margin-top:25px;
+  font-size:13px;
+  opacity:0.9;
+}
+
+/* Smooth Animation */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media(max-width:500px){
+  .app{
+    width:90%;
+    padding:20px;
+  }
+
+  .search{
+    flex-direction:column;
+  }
+
+  .search button{
+    width:100%;
+  }
+}
+.card{
+  color:green;
+}
+.copy{
+  color: black;
+}
