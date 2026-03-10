@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harshith5799.github.io/Project9/sitemap.xml
