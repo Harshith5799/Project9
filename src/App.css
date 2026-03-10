@@ -1,8 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  font-family:'Poppins', sans-serif;
+}
+/* Tablet View */
+@media (max-width:900px){
+
+  .app{
+    width:80%;
+    padding:25px;
+  }
+
+  .search{
+    flex-direction:column;
+  }
+
+  .search button{
+    width:100%;
+  }
+
+}
+
+/* Mobile View */
 @media (max-width:600px){
 
-h1{
-  font-size:28px;
-}
+  h1{
+    font-size:28px;
+  }
+
+  .app{
+    width:90%;
+    padding:20px;
+  }
+
+  input{
+    width:100%;
+    margin-bottom:10px;
+  }
+
+  button{
+    width:100%;
+  }
+
+  .weather-card{
+    width:100%;
+  }
+
+
 
 input{
   width:100%;
@@ -18,16 +65,10 @@ button{
 }
 
 }
-/* Import stylish Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* Reset */
-*{
-  margin:0;
-  padding:0;
-  
-  font-family:'Poppins', sans-serif;
-}
+
+/* Import stylish Google Font */
+/* Import stylish Google Font */
 
 /* Beautiful Gradient Background */
 body{
@@ -145,37 +186,11 @@ body{
   }
 }
 
-/* Mobile Responsive */
-@media(max-width:500px){
-  .app{
-    width:90%;
-    padding:20px;
-  }
 
-  .search{
-    flex-direction:column;
-  }
 
-  .search button{
-    width:100%;
-  }
-}
 .card{
   color:green;
 }
 .copy{
   color: white;
-}
-input{
-  width:65%;
-  padding:10px;
-  border-radius:8px;
-  border:none;
-}
-
-button{
-  padding:10px 15px;
-  border-radius:8px;
-  border:none;
-  cursor:pointer;
 }
