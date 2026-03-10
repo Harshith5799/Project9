@@ -11,10 +11,10 @@ export default function App(){
       return;
     }
     try {
-      setError
-      const response = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
-      );
+  setError("");
+  const response = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
+  );
       if (!response.ok) {
         throw new Error("City not found");
       }
@@ -28,7 +28,7 @@ export default function App(){
   return (
     <div className='app'>
       <div className='header'>
-        <h1 class="card">Weather App</h1>
+        <h1 className="card">Weather App</h1>
       </div>
       <div className='section'></div>
       <div className='search'>
@@ -46,7 +46,7 @@ export default function App(){
           </div>
       )}
       <div className='footer'>
-        <p class="copy">Copyright@2026 Designed By Bollineni Harshith</p>
+        <p className="copy">Copyright@2026 Designed By Bollineni Harshith</p>
       </div>
     </div>
   )
